@@ -17,7 +17,10 @@ export default function App() {
                 <Route path='/' element={<HomePage/>} />
                 <Route path='/about' element={<AboutPage />} />
                 <Route path='/users' element={<UsersPage />} />
+
+                <Route path='/users/new' element={<p>New User</p>} />
                 <Route path='/users/:id' element={<UserPage />} />
+                
                 <Route path='/usuarios' element={<Navigate to='/users' />} />
                 <Route path='/dashboard/*' element={<DashboardPage />} >
                     <Route path='welcome' element={<p>Welcome</p>} />
