@@ -4,7 +4,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from './pages/AboutPage';
 import UsersPage from './pages/UsersPage';
 import NotFoundPage from './pages/NotFoundPage';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar.component';
 
 export default function App() {
     return (
