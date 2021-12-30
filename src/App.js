@@ -19,7 +19,10 @@ export default function App() {
                 <Route path='/users' element={<UsersPage />} />
                 <Route path='/users/:id' element={<UserPage />} />
                 <Route path='/usuarios' element={<Navigate to='/users' />} />
-                <Route path='/dashboard/*' element={<DashboardPage />} />
+                <Route path='/dashboard/*' element={<DashboardPage />} >
+                    <Route path='welcome' element={<p>Welcome</p>} />
+                    <Route path='goodbye' element={<p>Goodbye</p>} />
+                </Route>
                 <Route path='*' element={<NotFoundPage />} />
             </Routes>
         </BrowserRouter>
