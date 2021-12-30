@@ -6,6 +6,7 @@ import UsersPage from './pages/UsersPage';
 import NotFoundPage from './pages/NotFoundPage';
 import Navbar from './components/Navbar/Navbar.component';
 import UserPage from './pages/UserPage';
+import DashboardPage from './pages/DashboardPage';
 
 export default function App() {
     return (
@@ -18,6 +19,7 @@ export default function App() {
                 <Route path='/users' element={<UsersPage />} />
                 <Route path='/users/:id' element={<UserPage />} />
                 <Route path='/usuarios' element={<Navigate to='/users' />} />
+                <Route path='/dashboard' element={<DashboardPage />} />
                 <Route path='*' element={<NotFoundPage />} />
             </Routes>
         </BrowserRouter>
