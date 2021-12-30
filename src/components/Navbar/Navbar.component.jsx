@@ -13,7 +13,7 @@ export default function Navbar() {
                     <NavLink className={({isActive}) => isActive ? "active" : ""} to='/about'>About</NavLink>
                 </li>
                 <li>
-                    <NavLink className={({isActive}) => isActive ? "active" : ""} to='/users'>Users</NavLink>
+                    <NavLink className={({isActive}) => isActive ? "active" : "blue"} to='/users'>Users</NavLink>
                 </li>
             </ul>
         </div>
