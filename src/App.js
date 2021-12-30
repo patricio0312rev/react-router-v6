@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import AboutPage from './pages/AboutPage';
 import UsersPage from './pages/UsersPage';
@@ -17,6 +17,7 @@ export default function App() {
                 <Route path='/about' element={<AboutPage />} />
                 <Route path='/users' element={<UsersPage />} />
                 <Route path='/users/:id' element={<UserPage />} />
+                <Route path='/usuarios' element={<Navigate to='/users' />} />
                 <Route path='*' element={<NotFoundPage />} />
             </Routes>
         </BrowserRouter>
